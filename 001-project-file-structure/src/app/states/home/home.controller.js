@@ -6,7 +6,7 @@
     .controller('HomeController', HomeController);
 
   /** @ngInject */
-  function HomeController($log, SITE_NAME, $window) {
+  function HomeController($log, SITE_NAME, $state) {
     var vm = this;
     vm.mainTitle = SITE_NAME;
     vm.signUpToday = signUpToday;
@@ -17,7 +17,8 @@
     }
 
     function submitForm(){
-      $window.location.href = "#/dashboard"
+      // $window.location.href = "#/dashboard"
+      $state.go('dashboard');
     }
 
   }
