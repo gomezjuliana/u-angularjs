@@ -6,13 +6,18 @@
     .controller('HomeController', HomeController);
 
   /** @ngInject */
-  function HomeController($log, SITE_NAME) {
+  function HomeController($log, SITE_NAME, $window) {
     var vm = this;
     vm.mainTitle = SITE_NAME;
     vm.signUpToday = signUpToday;
+    vm.submitForm = submitForm;
 
     function signUpToday(){
       $log.debug('signUpToday clicked!');
+    }
+
+    function submitForm(){
+      $window.location.href = "#/dashboard"
     }
 
   }
