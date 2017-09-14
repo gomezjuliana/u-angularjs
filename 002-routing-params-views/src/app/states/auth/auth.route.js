@@ -10,8 +10,12 @@
     $stateProvider
       .state('auth', {
         abstract: true,
-        template: '<section class="general-section" ui-view></section>',
         url: '/auth',
+        views: {
+          "site@": {
+            template: '<section class="general-section" ui-view></section>'
+          }
+        }
       })
       .state('login', {
       	parent: 'auth',
