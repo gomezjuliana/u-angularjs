@@ -12,7 +12,7 @@
     vm.signUpToday = signUpToday;
 
     function signUpToday(){
-      $state.go('signin');
+      $state.go('auth.signin');
     }
 
   }

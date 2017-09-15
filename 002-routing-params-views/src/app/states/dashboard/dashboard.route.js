@@ -63,10 +63,15 @@
           }
         },
         resolve: {
-          user: function(Configuration){
-            return Configuration()
+          users:function (Configuration){
+            return Configuration.getConfiguration();
           }
         }
-      })
+        // resolve: {
+        //   promiseObj:  function($http){
+        //                 return $http({method: 'GET', url: 'app/components/configuration/configuration.json'});
+        //             }
+        // }
+      });
   }
 })();

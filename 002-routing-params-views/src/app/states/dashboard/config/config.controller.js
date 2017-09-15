@@ -6,15 +6,10 @@
 		.controller('DashboardConfigController', DashboardConfigController);
 
 	/** @ngInject **/
-	function DashboardConfigController($log, $stateParams, Auth, Configuration) {
+	function DashboardConfigController($log, $stateParams, users) {
 		var dashConfigCtrl = this;
 
-		console.log($stateParams)
-
-		dashConfigCtrl.list = promiseObj.data;
-		console.log(dashConfigCtrl.list);
-
-		console.log(Configuration);
+		dashConfigCtrl.list = users.data;
 	};
 
 })();

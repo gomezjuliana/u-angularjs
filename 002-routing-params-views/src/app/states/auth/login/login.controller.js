@@ -16,7 +16,6 @@
    	function logIn(){
    		if(Auth.logIn(vm.currentUser)){
    			$state.go('dashboard.mainDashboard');
-   			$log.debug('Great logged', Auth.currentUser());
    		}else{
    			vm.error = true;
    		}

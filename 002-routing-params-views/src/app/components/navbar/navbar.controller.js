@@ -9,10 +9,7 @@
 		function NavbarController($state, Auth, $timeout){
 			var navCtrl = this;
 
-			console.log(navCtrl);
-
 			navCtrl.user = Auth.currentUser();
-			//console.log(navCtrl.user)
 			navCtrl.logout = logOut;
 
 			function logOut() {
