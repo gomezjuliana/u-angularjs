@@ -13,6 +13,11 @@
         views:{
           "site@":{
             template: '<section class="dashboard" ui-view="main"></section>'
+          },
+          "navbar@":{
+            templateUrl: 'app/components/navbar/navbar.html',
+            controller: 'NavbarController',
+            controllerAs: 'navCtrl'
           }
         },
           /** @ngInject */
@@ -23,8 +28,7 @@
         }
       })
 
-      .state('mainDashboard', {
-        parent: 'dashboard',
+      .state('dashboard.mainDashboard', {
         url: '/main-dashboard',
         params: {
           currentUser: {}
@@ -38,8 +42,7 @@
         }
       })
 
-      .state('detail', {
-        parent: 'dashboard',
+      .state('dashboard.detail', {
         url: '/detail',
         views: {
           "main": {
@@ -50,8 +53,7 @@
         }
       })
 
-      .state('config', {
-        parent: 'dashboard',
+      .state('dashboard.config', {
         url: '/config',
         views: {
           "main": {
@@ -61,9 +63,8 @@
           }
         },
         resolve: {
-          promiseObj:  function($http){
-              return $http({method: 'GET', url: 'app/components/configuration/configuration.json'})
-                      .success(function(response){return response});
+          user: function(Configuration){
+            return Configuration()
           }
         }
       })

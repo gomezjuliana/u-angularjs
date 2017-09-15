@@ -1,5 +1,4 @@
-(function(){
-	'use strict';
+{
 
 	angular
 		.module('angularApp')
@@ -14,12 +13,12 @@
 
 		function goToDetailMethod() {
 			console.log('hi');
-			$state.go('detail');
+			$state.go('dashboard.detail');
 		}
 
 		function goToConfigMethod() {
 			console.log('hey!');
-			$state.go('config');
+			$state.go('dashboard.config');
 		}
 	}
-})();
+}

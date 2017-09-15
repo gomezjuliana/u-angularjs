@@ -24,7 +24,7 @@
 
     function redirect() {
   		$timeout(function(){
-  			$state.go('login', {currentUser:vm.newUser});
+  			$state.go('auth.login', {currentUser:vm.newUser});
   		}, 2000);
     }
 

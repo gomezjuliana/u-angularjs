@@ -1,5 +1,4 @@
 (function(){
-	'use strict';
 
 	angular
 		.module('angularApp')
@@ -7,7 +6,8 @@
 
 		/** @ngInject */
 
-		function NavbarController($state, Auth, $timeout){
-			//something goes here
+		function NavbarController($state, $stateParams, Auth, $timeout){
+			console.log(Auth.currentUser())
 		}
-})
+
+})();

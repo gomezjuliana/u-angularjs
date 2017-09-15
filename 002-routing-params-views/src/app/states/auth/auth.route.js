@@ -17,8 +17,7 @@
           }
         }
       })
-      .state('login', {
-      	parent: 'auth',
+      .state('auth.login', {
       	url: '/login',
         params: {
           currentUser: {}
@@ -27,8 +26,7 @@
         controller: 'AuthLoginController',
         controllerAs: 'auLoginCtrl'
       })
-       .state('signin', {
-      	parent: 'auth',
+       .state('auth.signin', {
       	url: '/signin',
         templateUrl: 'app/states/auth/signin/signin.html',
         controller: 'AuthSigninController',
