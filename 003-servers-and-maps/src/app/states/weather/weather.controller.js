@@ -16,8 +16,8 @@
     //Should we extend or use vm?
     angular.extend($scope, {
         center: {
-            lat: 38.8225909761771,
-            lng: -96.5478515625,
+            lat: 43.4821971,
+            lng: -80.6167592,
             zoom: 4
         },
         defaults: {
