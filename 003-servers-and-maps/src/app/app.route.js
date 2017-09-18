@@ -12,7 +12,7 @@
         url: '/',
         templateUrl: 'app/states/weather/weather.html',
         controller: 'WeatherController',
-        controllerAs: 'weatherCtrl'
+        controllerAs: 'weatherCtrl',
       });
 
     $urlRouterProvider.otherwise('/');

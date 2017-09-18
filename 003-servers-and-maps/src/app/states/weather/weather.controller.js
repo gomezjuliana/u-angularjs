@@ -6,7 +6,7 @@
     .controller('WeatherController', WeatherController);
 
   /** @ngInject */
-  function WeatherController($http, $scope) {
+  function WeatherController($http, $scope, WeatherFactory) {
     var vm = this;
 
     //Talitos API Key
@@ -32,21 +32,23 @@
     });
 
     $scope.$on('leafletDirectiveMap.map.click', function(event, args){
-        if(vm.kind == '0'){
-            //Remember Services
-            $http({
-                method: 'GET',
-                url: 'http://api.openweathermap.org/data/2.5/home?APPID='+vm.apiKey+'&q=London'
-            }).then(function successCallback(response) {
-                alert(response.data.name); //Not a good practice 
-            }, function errorCallback(response) {
-                alert('Error');
-            });
-        }else if(vm.kind == '1'){
-            //http://api.openweathermap.org/v3/uvi/{lat},{lon}./current.json?appid={your-api-key}
-        }else if(vm.kind == '2'){
-            //http://api.openweathermap.org/pollution/v1/co/{location}/current.json?appid={api_key}
-        }
+        WeatherFactory.getWeather();
+
+        // if(vm.kind == '0'){
+        //     //Remember Services
+        //     $http({
+        //         method: 'GET',
+        //         url: 'http://api.openweathermap.org/data/2.5/home?APPID='+vm.apiKey+'&q=London'
+        //     }).then(function successCallback(response) {
+        //         alert(response.data.name); //Not a good practice 
+        //     }, function errorCallback(response) {
+        //         console.log('Error');
+        //     });
+        // }else if(vm.kind == '1'){
+        //     //http://api.openweathermap.org/v3/uvi/{lat},{lon}./current.json?appid={your-api-key}
+        // }else if(vm.kind == '2'){
+        //     //http://api.openweathermap.org/pollution/v1/co/{location}/current.json?appid={api_key}
+        // }
     });
 
   }
