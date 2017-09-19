@@ -30,7 +30,6 @@
             locationMarker: {
                 lat: null,
                 lng: null,
-                message: null,
                 focus: true,
                 draggable: false
             }
@@ -40,8 +39,7 @@
     $scope.$on('leafletDirectiveMap.map.click', getLocation);
 
 
-    function getLocation(event, args){
-
+    function getLocation(event, args, $mdDialog){
         $scope.center.lat = args.leafletEvent.latlng.lat;
         $scope.center.lng = args.leafletEvent.latlng.lng;
 
@@ -49,14 +47,30 @@
             var converted = convertToCelsius(response.data.main.temp);
             $scope.markers.locationMarker.lat = $scope.center.lat;
             $scope.markers.locationMarker.lng = $scope.center.lng;
-            $scope.markers.locationMarker.message = 'It\'s '+Math.round(converted)+' degrees here in '+response.data.name;
             console.log(response.data);
         });
+
+        // $mdDialog.show(
+        //     $mdDialog.alert()
+        //         .parent(angular.element(document.querySelector('#popupContainer')))
+        //         .clickOutsideToClose(true)
+        //         .title('This is an alert title')
+        //         .textContent('You can specify some description text in here.')
+        //         .ariaLabel('Alert Dialog Demo')
+        //         .ok('Got it!')
+        //         .targetEvent(ev)
+        // );
+
+        openModal();
     }
 
     function convertToCelsius(kelvin){
         var celsius = kelvin - 273.15;
         return celsius;
+    }
+
+    function openModal(){
+        console.log($mdDialog);
     }
   }
 })();
