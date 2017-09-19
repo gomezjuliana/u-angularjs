@@ -6,7 +6,7 @@
     .controller('WeatherController', WeatherController);
 
   /** @ngInject */
-  function WeatherController($http, $scope, WeatherFactory) {
+  function WeatherController($http, $scope, WeatherFactory, $mdDialog) {
     var vm = this;
 
     vm.kind = '0';
@@ -38,7 +38,6 @@
 
     $scope.$on('leafletDirectiveMap.map.click', getLocation);
 
-
     function getLocation(event, args, $mdDialog){
         $scope.center.lat = args.leafletEvent.latlng.lat;
         $scope.center.lng = args.leafletEvent.latlng.lng;
@@ -47,30 +46,27 @@
             var converted = convertToCelsius(response.data.main.temp);
             $scope.markers.locationMarker.lat = $scope.center.lat;
             $scope.markers.locationMarker.lng = $scope.center.lng;
-            console.log(response.data);
-        });
+            openModal(response.data);
+        }); 
+    };
 
-        // $mdDialog.show(
-        //     $mdDialog.alert()
-        //         .parent(angular.element(document.querySelector('#popupContainer')))
-        //         .clickOutsideToClose(true)
-        //         .title('This is an alert title')
-        //         .textContent('You can specify some description text in here.')
-        //         .ariaLabel('Alert Dialog Demo')
-        //         .ok('Got it!')
-        //         .targetEvent(ev)
-        // );
+    function openModal(data){
+        var converted = Math.round(convertToCelsius(data.main.temp));
 
-        openModal();
-    }
+        $mdDialog.show(
+            $mdDialog.alert()
+                .parent(angular.element(document.body))
+                .clickOutsideToClose(true)
+                .title(data.name)
+                .textContent('It\'s '+converted+' degrees Celcius')
+                .ariaLabel('Alert Dialog')
+                .ok('Got it!')
+        );
+    };
 
     function convertToCelsius(kelvin){
         var celsius = kelvin - 273.15;
         return celsius;
-    }
-
-    function openModal(){
-        console.log($mdDialog);
-    }
+    };
   }
 })();
