@@ -12,7 +12,7 @@
 		}
 
 		function getWeather(lat, lng){
-			return $http.get(`https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=534eccb946ce639dbb41f82b8be15dcc`)
+			return $http.get('https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lng+'&appid=534eccb946ce639dbb41f82b8be15dcc')
 			.success(function(response){
 				return response;
 			})
