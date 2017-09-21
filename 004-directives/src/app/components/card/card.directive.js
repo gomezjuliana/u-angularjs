@@ -8,7 +8,20 @@
   /** @ngInject */
   function cardDirective() {
     return {
-      templateUrl: 'app/components/card/card.html'
+      restrict: 'EA',
+      replace: true,
+      scope: {
+        title: '=',
+        description: '=',
+        background: '=',
+        textColor: '=',
+        icon: '@',
+        favorite: '&cbFavorite',
+        reservedBy: '@'
+      },
+      templateUrl: 'app/components/card/card.html',
+      controller: 'CardController',
+      controllerAs: 'cardCtrl'
     };
   }
 
