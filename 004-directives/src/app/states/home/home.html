@@ -36,16 +36,17 @@
             background="homeCtrl.card.background"
             text-color="homeCtrl.card.textColor"
             reserved-by="{{homeCtrl.RESERVED_BY}}"
-            cb-favorite="homeCtrl.card.setFavorite(title)"
+            cb-favorite="homeCtrl.card.setFavorite(title, description, background, textColor, icon)"
             icon="{{homeCtrl.card.icon}}">
       </card>
 
       <md-subheader class="md-no-sticky">Favorite list</md-subheader>
-      <md-list-item ng-repeat="favorite in homeCtrl.favoriteList track by $index">
-        <md-checkbox></md-checkbox>
-        <p>{{favorite}}</p>
-      </md-list-item>
-
+        <md-radio-group ng-model="data.group1">
+          <md-radio-button ng-repeat="favorite in homeCtrl.favoriteList track by $index" 
+                            value="{{favorite}}" 
+                            class="md-primary"
+                            ng-change="vm.resetFavorite()">{{favorite.title}}</md-radio-button>
+        </md-radio-group>
     </div>
   </div>
 
