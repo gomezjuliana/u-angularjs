@@ -41,11 +41,10 @@
       </card>
 
       <md-subheader class="md-no-sticky">Favorite list</md-subheader>
-        <md-radio-group ng-model="data.group1">
+        <md-radio-group ng-model="data" ng-change="homeCtrl.resetFavorite(data)">
           <md-radio-button ng-repeat="favorite in homeCtrl.favoriteList track by $index" 
-                            value="{{favorite}}" 
-                            class="md-primary"
-                            ng-change="vm.resetFavorite()">{{favorite.title}}</md-radio-button>
+                           ng-value="favorite" 
+                           class="md-primary">{{favorite.title}}</md-radio-button>
         </md-radio-group>
     </div>
   </div>

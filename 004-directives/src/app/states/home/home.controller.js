@@ -8,15 +8,17 @@
   /** @ngInject */
   function HomeController(RESERVED_BY) {
     var vm = this;
+
     vm.RESERVED_BY = RESERVED_BY;
     vm.favoriteList = [];
     vm.icons = ['account_circle', 'code', 'face'];
     vm.card = {};
     vm.card.setFavorite = setFavorite;
     vm.setIcon = setIcon;
-    vm.resetFavorite = resetFavorite
+    vm.resetFavorite = resetFavorite;
 
     function setFavorite(title, description, background, textColor, icon){
+      console.log(vm.card)
       var fave = {
         title: title,
         description: description,
@@ -25,16 +27,17 @@
         icon: icon
       }
       vm.favoriteList.push(fave);
-      console.log(vm.favoriteList)
+      vm.card = {};
+      vm.card.setFavorite = setFavorite;
     }
 
     function setIcon(iconClass) {
       vm.card.icon = iconClass;
-      console.log(vm.card.icon)
     }
 
-    function resetFavorite() {
-      console.log('hey')
+    function resetFavorite(value) {
+      vm.card = value;
+      vm.card.setFavorite = setFavorite;
     }
   }
 
