@@ -37,15 +37,19 @@
             text-color="homeCtrl.card.textColor"
             reserved-by="{{homeCtrl.RESERVED_BY}}"
             cb-favorite="homeCtrl.card.setFavorite(title, description, background, textColor, icon)"
+            cb-erase="homeCtrl.eraseCard(title, description, background, textColor, icon)"
             icon="{{homeCtrl.card.icon}}">
       </card>
 
       <md-subheader class="md-no-sticky">Favorite list</md-subheader>
         <md-radio-group ng-model="data" ng-change="homeCtrl.resetFavorite(data)">
-          <md-radio-button ng-repeat="favorite in homeCtrl.favoriteList track by $index" 
+            <md-radio-button ng-repeat="favorite in homeCtrl.favoriteList track by $index" 
                            ng-value="favorite" 
-                           class="md-primary">{{favorite.title}}</md-radio-button>
+                           class="md-primary">
+                           {{favorite.title}}
+                         </md-radio-button>
         </md-radio-group>
+       
     </div>
   </div>
 

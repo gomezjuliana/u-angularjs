@@ -13,6 +13,7 @@
     vm.description = $scope.description;
     vm.reservedBy = $scope.reservedBy;
     vm.background = $scope.background;
+    vm.erase = $scope.erase;
   }
 
 })();

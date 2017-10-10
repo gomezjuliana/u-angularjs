@@ -23,6 +23,16 @@
                 })">
       <md-icon md-font-set="md" ng-style="{'color' : textColor}">favorite</md-icon>
     </md-button>
+    <md-button class="md-icon-button" aria-label="Erase" 
+               ng-click="erase({
+                title: title,
+                description: description,
+                background: background,
+                textColor: textColor,
+                icon: icon
+                })">
+      <md-icon md-font-set="md" ng-style="{'color' : textColor}">close</md-icon>
+    </md-button>
   </md-card-actions>
 </md-card>
 

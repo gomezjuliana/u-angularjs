@@ -17,7 +17,8 @@
         textColor: '=',
         icon: '@',
         favorite: '&cbFavorite',
-        reservedBy: '@'
+        reservedBy: '@',
+        erase: '&cbErase'
       },
       templateUrl: 'app/components/card/card.html',
       controller: 'CardController',
