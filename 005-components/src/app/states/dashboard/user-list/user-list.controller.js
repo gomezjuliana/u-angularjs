@@ -6,9 +6,8 @@
     .controller('UserListController', UserListController);
 
   /** @ngInject */
-  function UserListController ($timeout, users) {
+  function UserListController ($timeout) {
     var vm = this;
-    vm.users = users;
 
     vm.selectedUser = function (user) {
       vm.user = user;

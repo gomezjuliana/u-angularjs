@@ -12,9 +12,7 @@
         url: '/user-list',
         views:{
           'main': {
-            controller: 'UserListController',
-            templateUrl: 'app/states/dashboard/user-list/user-list.html',
-            controllerAs: 'userListCtrl'
+            component: 'userList'
           }
         },
         resolve: {
