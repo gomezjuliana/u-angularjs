@@ -3,7 +3,7 @@
 
   angular
     .module('angularApp')
-    .directive('userCard', userCard);
+    .directive('userCardLegacy', userCard);
 
   function userCard () {
     return {

@@ -3,7 +3,7 @@
 
 	angular
 		.module('angularApp')
-		.component('dashboard.userList', {
+		.component('userList', {
 			templateUrl: 'app/states/dashboard/user-list/user-list.html',
 			controller: 'UserListController',
             controllerAs: 'userListCtrl',

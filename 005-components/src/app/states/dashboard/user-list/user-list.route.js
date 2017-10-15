@@ -11,7 +11,7 @@
       .state('dashboard.userList', {
         url: '/user-list',
         views:{
-          'main': {
+          'main@dashboard': {
             component: 'userList'
           }
         },
