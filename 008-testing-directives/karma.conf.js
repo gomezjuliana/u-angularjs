@@ -59,7 +59,8 @@ module.exports = function(config) {
       whitelist: [path.join(conf.paths.src, '/**/!(*.html|*.spec|*.mock).js')]
     },
 
-    browsers : ['PhantomJS'],
+    // browsers : ['PhantomJS'],
+    browsers : ['Chrome'],
 
     plugins : [
       'karma-phantomjs-launcher',
@@ -67,7 +68,8 @@ module.exports = function(config) {
       'karma-phantomjs-shim',
       'karma-coverage',
       'karma-jasmine',
-      'karma-ng-html2js-preprocessor'
+      'karma-ng-html2js-preprocessor',
+      'karma-chrome-launcher'
     ],
 
     coverageReporter: {
