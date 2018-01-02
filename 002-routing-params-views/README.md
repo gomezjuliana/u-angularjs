@@ -1,13 +1,13 @@
 # 002 - Routing, Params and Views 
 
-The Purpose of this example it's to understand a more depth routing system, involving params and views, those are the following concepts that we want to cover:
+The Purpose of this example is to understand a more in-depth routing system, involving params and views. We'll cover:
 
-* Routes one file or many? `$stateProvider`
+* Route one file or many? `$stateProvider`
 * Abstract states `abstract:true`
 * Views `ui-view`
 * Sending params `$stateParams`
 
-There is information about [Multiple Named Views][1] and [Parent and Abstract States][2], take a look of this documentation to get a clearer concept about views and routes.
+Here is some information about [Multiple Named Views][1] and [Parent and Abstract States][2]. Take a look at this documentation to get a clearer concept about views and routes.
 
 ### To Do
 Perform the following in the current example:
@@ -16,13 +16,13 @@ Perform the following in the current example:
   * Detail, use `params` to send the detail component wanted.
   * Main, dashboard state.
 
-* Create a `navbar` to navigate in the pages:
+* Create a `navbar` to navigate the pages:
    * Show the current user name.
    * Show a logout button.
    * Use authFactory to get the login data.
-   * Use `ui-view` to show, depending of the `dashboard` state.
+   * Use `ui-view` to show, depending on the `dashboard` state.
 
-* If the user is already logged in page should not allow him to see login or signin page.
+* If the user is already logged in, the page should not allow them to see the login or signin page.
 
 ### Solution
 

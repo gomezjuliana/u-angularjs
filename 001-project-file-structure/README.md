@@ -1,6 +1,6 @@
 # 001 - Project File Structure
 
-The Purpose of this example it's to understand how to set up a robust file structure for an Angular Project using [LIFT][1] principles:
+The Purpose of this example is to understand how to set up a robust file structure for an AngularJS Project using [LIFT][1] principles:
 
 * Identify code at a glance
 * Flat structure as long as we can
@@ -10,8 +10,8 @@ For More information about Applications Structure, [click here][2]
 
 ### To Do
 Perform the following in the current example:
-* Create a login page, you can use Bootsrap, is up to you, Email and Password.
-* Create a Dashboard page after login, don't re invent the wheel, for testing purposes you can jump into the other view without any autentification, the important part here is the code structure.
+* Create a login page that accepts email and password. You can use Bootsrap if you want.
+* Create a Dashboard page after login (don't re invent the wheel). For testing purposes you can jump into the other view without any autentification, the important part here is the code structure.
 * In the Dashboard view you can create a fictional layout and data, [click here][5]
 
 ### Solution

@@ -1,6 +1,6 @@
 # 006 - Basic Testing
 
-The Purpose of this example it's to help you understand the basic concepts about unit testing, in this example we are going to work with [`karma`][1] as our test runner and [`jasmine`][2] to write our tests, using our previous example [003 - Servers and Maps][3] as starting point we are going to cover:
+The Purpose of this example is to help you understand the basic concepts about unit testing. In this example we are going to work with [`karma`][1] as our test runner and [`jasmine`][2] to write our tests, using our previous example [003 - Servers and Maps][3] as a starting point. We are going to cover:
 
 *  Testing Services
 *  Testing Controllers
@@ -13,7 +13,7 @@ The Purpose of this example it's to help you understand the basic concepts about
 * coverage test result can be found in: `/coverage/PhantomJs***/index.html`
 
 ### To Do
-Before of getting started please take a look of jasmine [documentantion][4] if you don't have previous expirence with tests:
+Before getting started please take a look at the Jasmine [documentantion][4].
 * Create a test for the Service `WeatherFactory`
 * Create a test for the Controller `WeatherController`
 * We need 100% of covarage test result

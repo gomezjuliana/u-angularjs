@@ -1,10 +1,10 @@
 # 005 - Components 
 
-The Purpose of this example it's to understand components both as a directive and as self contain view to use in routing
+The purpose of this example is to understand components both as a directive and as self contained views to use in routing
 
-This example assume you already know about routing and directives. If you haven't is recommended that you check out [Routing][1] and [Directives][2]
+This example assumes you already know about routing and directives. If you haven't we recommend that you check out [Routing][1] and [Directives][2]
 
-Also you may want to read the [documentation][3] about Components in Angularjs
+Also you may want to read the [documentation][3] about Components in AngularJS
 
 ### To Do
 Perform the following in the current example:

@@ -1,31 +1,31 @@
 # Angular JS
-The purpose of this practices it's to Train **Front End** developers to follow best practices **improving** their logical thinking through progressive enhancement and make them feel **comfortable** about asking questions and discussing possible solutions.
+The purpose of this practice is to Train **Front End** developers to follow best practices, **improve** their logical thinking through progressive enhancement and help them feel **comfortable** asking questions and discussing possible solutions.
 ### Who is a mentor?
-Your mentor is a Sr. level developer who has about 0.5-1 hour a day allocated specifically to answer your questions and review your code.  His goal is to help you clear your doubt, check your code to make sure he improves your way of thinking and problem solving.  He also makes sure that you are following best practices.  he gives you feedback and makes sure you are on the right track. If you feel lost, if you are not sure what you are doing is correct, feel free to ask him openly. That is why they are here, to **help YOU!**
+Your mentor is a Senior level developer who has about 0.5-1 hour a day allocated specifically to answer your questions and review your code.  Their goal is to help you clarify your doubts and check your code to improve your logic and problem solving.  They also make sure that you are following best practices. They give you feedback and make sure you are on the right track. If you feel lost or if you're not sure if what you're doing is correct, feel free to ask them openly. They're here to **help YOU!**
 	
 ### How do I interact with my mentor?
-1) **Daily meeting:**	Your mentors are obligated to meet with you at least 15 minutes a day. You will explain to your mentor, what you did yesterday, what you are going to do today and if you have any questions. Ask him when would be the best time to meet with him everyday. During the day,Write your questions in a list and ask them in your daily.   Remember no question is too simple not to ask :)						
+1) **Daily meeting:**	This meeting will be ever day for around 15 minutes. You'll update your mentor on your daily progress, goals for the day and clear up any questions you might have. Please ask your mentor when they are available and make sure to keep track of any questions you might have that they can help you with. Remember no question is too simple not to ask :)						
 							
-2) **Resolving blockers/bugs by your mentor:**		You will have to have at least 2 meeting of half an hour with your mentor.  The idea of this meeting is that your mentor helps you to unblock your issues or your bugs.  He will explain you what is the solution and best practices.  He will pick the practice that thinks you need to learn about and will do peer programming with you. 					
+2) **Resolving blockers/bugs by your mentor:**	You should meet twice with your mentor for around half an hour.  The idea of this meeting is that your mentor helps you to unblock your issues or your bugs.  They will explain possible solutions and best practices. They can help you improve certain aspects of your code through pair programming. 					
 							
 3) **Are you blocked?**		If you are blocked or you need a quick help. Do not waste time, write to your mentor immediately.			
 ### Timeline
 This program is define to be finished
-* **JR:** 8 hours day in 2 weeks					
+* **Junior:** 8 hours day in 2 weeks					
 * **Mid:** 1 hour a day in 4 weeks					
-* **Sr:** 1 hour a day in 2 weeks
+* **Senior:** 1 hour a day in 2 weeks
 ### How to start? 
-Talk with your mentor, introduce yourself, agree on the time you will have your daily meeting with them. You need a talos email account, you need your slack account to be able to communicate with your mentor. If you do not have access to any of below items ask your immediate manager(SM/PO/Mentor) or HR to help you with this. 
+Talk with your mentor, introduce yourself and agree on the time you will have your daily meeting with them. You need a talos email account and you need your slack account to be able to communicate with your mentor. If you do not have access to any of below items ask your immediate manager(SM/PO/Mentor) or HR to help you with this. 
 
-Before taking this course, you should have at least an intermediate level of html and css. Given that, we have a course prepared for you [Talos html and css course][13].  
+Before taking this course, you should have at least an intermediate level of HTML and CSS. If you need a refresher, we made this course for you [Talos html and css course][13].  
 
-You should also read about Angularjs Documentation, in these examples we asume that you have a previus knowlage about Angular and about web development [Angular Style Guide][3].
+You should also read the AngularJS Documentation. In these examples we asume that you have a previus knowlage about AngularJS and about web development [Angular Style Guide][3].
 
-* If you are new in Angular please take a look of [Code School Angular Courses][1], also [Angular Documentation][2] there you can find enough information to get a better understanding about how Angular works.
-* You should read the [Angular Style Guide][3] by johnpapa, there you will find examples of common errors and the best way to arrange your code, this is not the only way of coding with angular, but it’s a very good to way to understand how to use angular correctly. 
+* If you are new to AngularJS please take a look at [Code School Angular Courses][1] and [Angular Documentation][2] there you can find enough information to get a better understanding about how AngularJS works.
+* You should read the [Angular Style Guide][3] by johnpapa. There you will find examples of common errors and the best way to arrange your code. This is not the only way of coding with AngularJS, but it’s a very good to way to understand how to use AngularJS efficiently. 
 
 ### Content
-Content of the practice materials, take your time to develop the content, if you have any question, we will provide extra material in every practice so you can dig deeper in the knowlage:
+Take your time to work through the content. If you have any question, we will provide extra material in every practice so you can dig in deeper:
 
 * 001 - [Project File Structure][4]
 * 002 - [States, views and params][6]
@@ -37,9 +37,9 @@ Content of the practice materials, take your time to develop the content, if you
 * 008 - [Testing Directives][12]
 
 ### Install
-To run the examples you should run `gulp serve`, each folder has it's own server and their own dependencies.
+To run the examples run `gulp serve`. Each folder has it's own server and their own dependencies.
 
-Check if you have the following dependences:
+Check if you have the following dependencies:
 * `nodejs v6`
 * `bower`
 
@@ -47,7 +47,7 @@ Set up your environment, in each example folder:
 * `npm install`
 * `bower install`
 
-> Runing this examples you may fine troubles with the npm or the gulp task, please take a look of the documentation of the `gulp generator` [here][5], in which we base this practices.
+> Runing this examples you may find troubles with the npm or the gulp task, please take a look at the documentation of the `gulp generator` [here][5], in which we base these practices.
 
  [1]: https://www.codeschool.com/courses/shaping-up-with-angular-js
  [2]: https://docs.angularjs.org/api

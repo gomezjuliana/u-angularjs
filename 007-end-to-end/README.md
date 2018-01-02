@@ -1,6 +1,6 @@
 # 007 - end to end
 
-This example it's to understand how to create a simple end to end test using protractor. We are going to cover the following subjects:
+This example will help you understand how to create a simple end to end test using protractor. We are going to cover the following subjects:
 
 *  End to end tests
 *  Protractor
@@ -13,14 +13,6 @@ Perform the following in the current example:
 
 ### Solution
 
-You might noticed that the example it's not completed, that's part of the challenge figure out, don't forget the good practices!, if you already completed it, take a look of the solution, click [here][3].
+You might notice that the example is not completed - that's part of the challenge! Figure it out and don't forget the best practices! If you've already completed it, take a look at the solution [here][1].
 
-[1]:https://openweathermap.org/api
-[2]: http://angular-ui.github.io/ui-leaflet/#!/
-[3]: https://material.angularjs.org/latest/
-[4]: http://angular-ui.github.io/ui-leaflet/#!/examples/events
-[5]: https://openweathermap.org/current
-[6]: http://angular-ui.github.io/ui-leaflet/#!/examples/marker
-[7]: https://material.angularjs.org/latest/api/service/$mdDialog
-[8]: https://openweathermap.org/api/uvi
-[9]: https://openweathermap.org/api/pollution/co
+[1]: https://github.com/talosdigital/u-angularjs/tree/solved/007-end-to-end

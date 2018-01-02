@@ -1,6 +1,6 @@
 # 003 - Servers and Maps
 
-The Purpose of this example it's to understand how to interact with servers in a real life application, we will work with a [Open Wheater API][1] to retrive our data, also a little introduction about [ui-leaflet][2] and [Angular Materials][3], and we are going to cover the following subjects: 
+The Purpose of this example is to understand how to interact with servers in a real life application. We will work with [Open Wheater API][1] to retrive data. You'll also learn a little about [ui-leaflet][2] and [Angular Materials][3]. We are going to cover the following subjects: 
 
 *  Data Services and Factories
 * `$http` and `$resource`
@@ -16,7 +16,7 @@ Perform the following in the current example:
 
 ### Solution
 
-You might noticed that the example it's not completed, that's part of the challenge figure out, don't forget the good practices!, if you already completed it, take a look of the solution, click [here][3].
+You might notice that the example is not completed - that's part of the challenge! Figure it out and don't forget the best practices! If you've already completed it, take a look at the solution [here][3].
 
 [1]:https://openweathermap.org/api
 [2]: http://angular-ui.github.io/ui-leaflet/#!/
