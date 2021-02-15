@@ -16,12 +16,40 @@
         <div md-color-picker ng-model="homeCtrl.card.background" label="Background"></div>
 
         <div md-color-picker ng-model="homeCtrl.card.textColor" label="Text Color"></div>
+
+        <md-input-container>
+          <label>Title</label>
+          <input type="text" name="title" ng-model="homeCtrl.card.title">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Description</label>
+          <textarea name="description" id="" cols="30" rows="2" ng-model="homeCtrl.card.description"></textarea>
+        </md-input-container>
+
       </md-content>
     </form>
 
     <div flex="50">
-      <md-subheader class="md-no-sticky">Card Directive</md-subheader>
+      <card title="homeCtrl.card.title"
+            description="homeCtrl.card.description"
+            background="homeCtrl.card.background"
+            text-color="homeCtrl.card.textColor"
+            reserved-by="{{homeCtrl.RESERVED_BY}}"
+            cb-favorite="homeCtrl.card.setFavorite(title, description, background, textColor, icon)"
+            cb-erase="homeCtrl.eraseCard(title, description, background, textColor, icon)"
+            icon="{{homeCtrl.card.icon}}">
+      </card>
+
       <md-subheader class="md-no-sticky">Favorite list</md-subheader>
+        <md-radio-group ng-model="data" ng-change="homeCtrl.resetFavorite(data)">
+            <md-radio-button ng-repeat="favorite in homeCtrl.favoriteList track by $index" 
+                           ng-value="favorite" 
+                           class="md-primary">
+                           {{favorite.title}}
+                         </md-radio-button>
+        </md-radio-group>
+       
     </div>
   </div>
 
